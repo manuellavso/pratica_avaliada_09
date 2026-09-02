@@ -2,7 +2,7 @@ import axios from "axios"
 
 // Conectar com o backend (baseURL = endereço do deploy)
 const api = axios.create({
-    baseURL: 'https://lojagames-3nay.onrender.com'
+    baseURL:  import.meta.env.VITE_API_URL
 })
 
 // Criar funções para enviar requisições ao backend
